@@ -1,0 +1,1 @@
+{"name":"chrome-xo","private":true,"scripts":{"build":"esbuild js/main.js --bundle --format=iife --minify --outfile=js/app.js && esbuild css/app.css --minify --outfile=css/app.min.css"},"devDependencies":{"esbuild":"^0.21.0"}}
