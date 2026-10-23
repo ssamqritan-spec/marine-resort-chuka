@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: chrome-xo-api
+    runtime: node
+    rootDir: api
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://marine-resort-chuka.onrender.com
